@@ -2,6 +2,7 @@
 
 provider "aws" {
   region = "us-west-2"
+  shared_credentials_file = "%USERPROFILE%\aws\credentials"
 }
 
 module "vpc" {
